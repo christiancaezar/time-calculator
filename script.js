@@ -185,7 +185,7 @@ function resetProgress(){
     document.getElementById("hours").textContent = "0";
     document.getElementById("minutes").textContent = "0";
     timeInputs.forEach(element => {
-        element.value = "--:--";
+        element.value = "";
         element.classList.remove("success");
         element.classList.remove("error");
     });
