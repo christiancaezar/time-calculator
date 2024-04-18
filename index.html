@@ -13,13 +13,22 @@
 </head>
 <body>
     <div class="container-fluid d-flex align-items-center justify-content-center main-container flex-column">
-        <p class="notice"><strong>Important note:</strong> Please do not reload the page. This page does not save your session and your progress.</p>
-        <div class="container main-content d-flex justify-content-center align-items-center flex-column">
-            <div class="time-picker d-flex justify-content-center align-items-center">
-                <input type="time" id="time1">
+        
+        <div class="container main-content d-flex justify-content-center align-items-right flex-column">
+            <label for="am-time" ><h6>Morning:</h6></label>
+            <div class="time-picker d-flex justify-content-center align-items-center" id="am-time">
+                <input type="time" id="am-time1">
                 <span>to</span>
-                <input type="time" id="time2">
+                <input type="time" id="am-time2">
             </div>
+
+            <label for="am-time" ><h6>Afternoon:</h6></label>
+            <div class="time-picker d-flex justify-content-center align-items-center" id="am-time">
+                <input type="time" id="pm-time1"">
+                <span>to</span>
+                <input type="time" id="pm-time2">
+            </div>
+
             <button class="add-button mb-2" onclick="calcTimeDif()">Add</button>
             <button class="reset-button" onclick="confirmResetMessage()">Reset All</button>
             <div class="container total-hours">
@@ -27,6 +36,7 @@
                 <p><span id="hours" class="total">0</span> hours and <span id="minutes" class="total">0</span> minutes</p>
             </div>
         </div>
+        <p class="notice"><strong>Important note:</strong> Please do not reload the page. This page does not save your session and your progress.</p>
     </div>
 </body>
 </html>
